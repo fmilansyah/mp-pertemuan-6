@@ -1,17 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Segitiga
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item>
+    <ion-label>Alas</ion-label>
+    <ion-input placeholder="input alas" [(ngModel)]="num1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tinggi</ion-label>
+    <ion-input placeholder="input tinggi" [(ngModel)]="num2"></ion-input>
+  </ion-item>
+  <ion-button color="primary" (click)="result()">Hitung</ion-button>
+  <ion-button color="danger">Reset</ion-button>
+  <ion-item>
+    <ion-label>Hasil</ion-label>
+    <ion-input placeholder="hasil" value="{{num3}}"></ion-input>
+  </ion-item>
 </ion-content>
